@@ -31,19 +31,50 @@
     <div class="col-lg-6">
       <div class="product-content p-4 p-md-5 h-100">
         <h3 class="product-title">Live Up to your name</h3>
-        <div class="product-category">Watches</div>
-        <div class="product-price">$345</div>
+        <div class="product-category">Onye Eze</div>
+        <div class="product-price"></div>
         <div class="product-description">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique sapien nec mi placerat sodales. Cras bibendum, elit in semper venenatis, lorem ipsum tempus felis, eu euismod neque dolor sit amet erat.</p>
+          <p>Create a DP of your name</p>
         </div>
-        <div class="product-color-selector">
-          <span class="product-color-label">Color</span>
-          <ul class="product-colors">
-            <li class="product-color product-color-black product-color_active" data-slide-index="1"></li>
-            <li class="product-color product-color-navy" data-slide-index="2"></li>
-            <li class="product-color product-color-grey" data-slide-index="3"></li>
-          </ul>
-        </div>
+          <div class="col-md-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Enter Your Name" name="title" required id="title" onkeyup="myFunctionone()" >
+                </div>
+                <div class="form-group"> 
+                    <input type="text" class="form-control" placeholder="What Does Your Name Mean?" name="location" maxlength="30" required id="location" onkeyup="myFunctiontwo()">
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" accept="image/*" id="customFile" name="file"
+                        onchange="onFileChange(this)" required>
+                    <label class="custom-file-label" for="customFile">Select Your Photo</label>
+                </div>
+                <br>
+                <br>
+                <div class="text-center">
+                    <div id="preview">
+
+                        <div id="crop-area">
+                            <img src="images/avatar.png" id="profile-pic" />
+                        </div>
+                        <div id="divIDone">
+                        </div>
+
+                        <div id="divIDtwo">
+                        </div>
+                        <img src="frames/frame-0.png" id="fg" data-design="0" />
+                    </div>
+                </div>
+                
+                <br>
+                <div class="row text-center">
+                    <div class="col-6">
+                        <button class="btn rounded-0 btn-dark" id="download" onclick="uploadPicture()">Generate
+                            image</button>
+                    </div>
+                    <div class="col-6"> <span id="imagedownload"></span> </div>
+                </div>
+
+            </div>
         <button class="product-button btn btn-primary">Add to Cart</button>
       </div>
     </div>
@@ -65,7 +96,7 @@
             <div class="col-sm-12 col-md-6 offset-md-3">
                 <div class="row">
             <div class="col-md-12">
-                <h2>Ahagiefula DP Generator</h2>
+                <h2></h2>
                 <p class="">What Does Your Name Mean?</p>
                 <p>Enter your Name in the Name field, eg. Chibuzor, Obi, etc</p>
                 <p>Enter the meaning of your name e.g. Father's Heart, God is the Way, etc.</p>
